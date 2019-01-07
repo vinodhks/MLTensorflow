@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!--Load TensorFlow.js-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0">
+
+    </script>
+    <title></title>
+  </head>
+  <body onfocus="">
+    <h1>hello</h1>
+    <script>const a = tf.tensor([1,2,3,4]);
+    const b = tf.scalar(3.14);
+    document.write(a.toString(),b);
+    //converting vector into a 2x2 matrix
+    const c = tf.tensor([1,2,3,4],[2,2]);
+    console.log(c.toString());
+      
+    //converting vector into two 2x2 matrix
+    var shape = [2,2,2];
+    const e = tf.tensor([1,2,3,4,5,6,7,8,],shape);
+    console.log(e.toString());
+
+    //in the above variable shape first number tells no. of matricess next two tells no. of rows and coloms in each matrix
+
+
+    </script>
+  </body>
+</html>
